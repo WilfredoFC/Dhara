@@ -55,19 +55,8 @@ body {
     content: '💗 💕 💓 💖 💝';
 }
 
-}
-
-/* Container con scroll sin barra visible */
-.yes-container {
-    max-height: 90vh;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.yes-container::-webkit-scrollbar {
-    display: none: translateY(0); opacity: 0.15; }
+@keyframes floatHearts {
+    from { transform: translateY(0); opacity: 0.15; }
     to { transform: translateY(-110vh); opacity: 0; }
 }
 
@@ -76,8 +65,32 @@ body {
     z-index: 1;
     text-align: center;
     padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
     max-height: 90vh;
-    overflow-y: auto;
+}
+
+/* Container con scroll sin barra visible */
+.yes-container {
+    overflow: hidden;
+}
+
+.yes-header {
+    flex-shrink: 0;
+    padding-bottom: 20px;
+}
+
+.yes-messages {
+    flex: 1;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 0 10px;
+}
+
+.yes-messages::-webkit-scrollbar {
+    display: none;
 }
 
 h1 {
