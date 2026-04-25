@@ -55,6 +55,8 @@ body {
     z-index: 1;
     text-align: center;
     padding: 40px 20px;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 h1 {
@@ -72,9 +74,10 @@ h1 {
 }
 
 .gif-container {
-    margin: 20px auto;
+    margin: 20px auto 15px;
     display: flex;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 #cat-gif {
@@ -188,10 +191,11 @@ h1 {
 }
 
 .yes-message {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     color: #e91e8c;
     font-weight: 700;
-    margin-top: 24px;
+    margin-top: 16px;
+    line-height: 1.5;
     animation: fadeIn 1s ease 0.5s both;
 }
 
