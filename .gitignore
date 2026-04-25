@@ -1,0 +1,19 @@
+# VS Code
+.vs/
+.vscode/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs
+*.log
+
+# Dependencies
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
